@@ -1,15 +1,16 @@
-package cn.caber.zookeeper_curator;
+package cn.caber.zookeeper_curator.service.impl;
 
-import com.google.common.base.Strings;
 import org.apache.curator.framework.CuratorFramework;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class CuratorService {
+@Service
+public class CuratorServiceImpl {
 
     @Autowired
     private CuratorFramework client;
 
-    private String path ="";
+    private String path ="/zookeeper";
 
     public String getPath() throws Exception {
         client.start();

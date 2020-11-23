@@ -13,15 +13,8 @@ public class GetClient {
 
     @Value("${zk.connectionInfo}")
     private String connectionInfo;
-   /* RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
-    CuratorFramework client = CuratorFrameworkFactory.newClient(
-            connectionInfo,
-            5000,
-            3000,
-            retryPolicy);*/
-
    @Bean
-   public CuratorFramework getClient(){
+   public CuratorFramework getZKClient(){
        RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
        CuratorFramework client =
                CuratorFrameworkFactory.builder()
@@ -30,6 +23,7 @@ public class GetClient {
                        .connectionTimeoutMs(5000)
                        .retryPolicy(retryPolicy)
                        .build();
+       client.start();
        return client;
    }
 
