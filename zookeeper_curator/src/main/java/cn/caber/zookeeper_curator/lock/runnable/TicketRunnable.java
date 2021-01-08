@@ -1,4 +1,4 @@
-package cn.caber.zookeeper_curator.runnable;
+package cn.caber.zookeeper_curator.lock.runnable;
 
 import lombok.SneakyThrows;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;

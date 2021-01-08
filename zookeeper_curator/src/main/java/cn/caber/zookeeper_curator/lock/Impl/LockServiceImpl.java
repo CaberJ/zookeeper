@@ -1,13 +1,11 @@
-package cn.caber.zookeeper_curator.service.impl;
+package cn.caber.zookeeper_curator.lock.Impl;
 
-import cn.caber.zookeeper_curator.runnable.TicketRunnable;
-import cn.caber.zookeeper_curator.service.LockService;
+import cn.caber.zookeeper_curator.lock.runnable.TicketRunnable;
+import cn.caber.zookeeper_curator.lock.LockService;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.concurrent.locks.ReentrantLock;
 
 @Service
 public class LockServiceImpl implements LockService {

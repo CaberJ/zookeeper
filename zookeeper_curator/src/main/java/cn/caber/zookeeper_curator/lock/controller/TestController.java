@@ -1,6 +1,6 @@
-package cn.caber.zookeeper_curator.controller;
+package cn.caber.zookeeper_curator.lock.controller;
 
-import cn.caber.zookeeper_curator.service.LockService;
+import cn.caber.zookeeper_curator.lock.LockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

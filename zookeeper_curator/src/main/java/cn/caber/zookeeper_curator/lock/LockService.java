@@ -1,4 +1,4 @@
-package cn.caber.zookeeper_curator.service;
+package cn.caber.zookeeper_curator.lock;
 
 public interface LockService {
 

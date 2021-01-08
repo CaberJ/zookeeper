@@ -1,12 +1,10 @@
-package cn.caber.zookeeper_curator.runnable;
+package cn.caber.zookeeper_curator.lock.runnable;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-
-import java.util.concurrent.locks.ReentrantLock;
 
 public class Test {
     public static void main(String[] args) {
